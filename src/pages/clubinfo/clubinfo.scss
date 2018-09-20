@@ -1,0 +1,53 @@
+page-clubinfo {
+
+  .back-color-grey{
+    background: #fff  ;
+  }
+
+
+  .center{
+    text-align:center;
+  }
+
+  .label-color{
+    font-style: italic;
+    color: #181A1E;
+    font-family: "Times New Roman";
+    font-size: 16px;
+  }
+
+  .label-color-bold{
+    font-weight: bold;
+    color: #1681A3;
+    font-family: Tahoma;
+    font-size: 16px;
+  }
+  .btn-g{
+    margin-top: 40px;
+    padding: 18px 90px;
+    background: #181A1E;
+    color: #fff;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    text-transform: none;
+    font-style: italic;
+  }
+  .btn-g:hover{
+    background:#1681A3;
+    color: #fff;
+  }
+  .btn-m{
+    margin-top: 40px;
+    padding: 18px 90px;
+    background:#181A1E;
+    color: #fff;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    text-transform: none;
+    font-style: italic;
+  }
+  .btn-m:hover{
+    background:#1681A3;
+    color: #fff;
+  }
+}

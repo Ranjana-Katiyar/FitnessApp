@@ -1,0 +1,42 @@
+page-news {
+  .news-head{
+    background: #000;
+  }
+
+  .news-head h2{
+    color: #fff;
+    font-family: "Comic Sans MS";
+  }
+
+  .news-head p{
+    color: #33A117;
+  }
+
+  .news_content{
+    text-align:justify;
+
+    margin-top: 20px;
+  }
+
+  .news_content h3{
+    text-align: right;
+    font-size: 18px;
+    color: #1681A3;
+    font-family: "Comic Sans MS";
+  }
+
+  .news_img{
+    border: 1px solid #D5DBDB;
+    border-style:inset;
+  }
+
+  .text-f ion-icon{
+    color: #1681A3;
+    font-weight: 600;
+  }
+
+  .text-f h3{
+    font-size: 18px;
+
+  }
+}

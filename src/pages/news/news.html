@@ -1,0 +1,59 @@
+
+
+<ion-header>
+  <ion-navbar color="nav-color">
+    <ion-title>
+      <img src="../../assets/imgs/lifelogo.png" style="width:50px; height:50px;">
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="background: #fff ;" no-padding>
+  <ion-grid no-padding>
+    <ion-row no-padding>
+
+      <ion-col col-12 no-padding>
+        <ion-card *ngFor = "let item of news" no-padding>
+          <ion-item class = "news-head">
+            <ion-avatar item-start>
+              <img [src] = "item.news_image_url" >
+            </ion-avatar>
+            <h2>{{item.news_title}}</h2>
+            <p> {{item.news_date}}</p>
+          </ion-item>
+
+          <ion-card-header class = "news_img">
+            <ion-thumbnail item-start>
+              <img [src] = "item.news_image_url"imageViewer>
+            </ion-thumbnail>
+          </ion-card-header>
+
+          <ion-card-content class = "news_content">
+            <p>{{item.news_content}}</p>
+            <h3> {{item.news_selected_city}}</h3>
+          </ion-card-content>
+
+
+          <ion-row>
+            <ion-col class = "text-f">
+              <button ion-button icon-start clear large>
+                <ion-icon ios="ios-heart" md="md-heart" item-start></ion-icon>
+                <h3>{{item.news_like_count}}</h3>
+              </button>
+            </ion-col>
+            <ion-col class = "text-f">
+              <button ion-button icon-start clear large>
+                <ion-icon ios="ios-star" md="md-star" item-start></ion-icon>
+                <h3>{{item.news_favorite}}</h3>
+              </button>
+            </ion-col>
+
+          </ion-row>
+
+
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,23 @@
+<ion-card style="background: #fff; padding: 0px !important; margin-bottom: -10px;">
+
+  <ion-card-header (click)="toggleAccordion()" no-padding>
+    <img [src]="city.city_image_url" />
+    <h2>{{city.city_name}}</h2>
+  </ion-card-header>
+  <ion-card-content #cc no-padding class="heading-back">
+    <ion-list *ngFor="let club of city.city_clubs" class="heading-back">
+      <ion-item (click)="onLoadClub(city.city_id,club.club_id)" class="heading-back">
+        <ion-thumbnail item-start>
+          <img [src]="club.club_image_url"/>
+        </ion-thumbnail>
+        <h3 id="club-heading">{{club.club_name}}</h3>
+        <p>{{club.club_address}}</p>
+        <p>{{club.club_zipcode}}</p>
+        <p>{{club.club_phone}}</p>
+        <p>{{club.club_email}}</p>
+        <button ion-button clear item-end> <ion-icon class="ftsize" name="arrow-round-forward"></ion-icon></button>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+
+</ion-card>

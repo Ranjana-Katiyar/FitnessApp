@@ -1,3 +1,45 @@
 page-home {
 
+  .card-header{
+    background: #000;
+    height: 100%;
+    width: auto;
+
+  }
+
+  .card-header img{
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .heading-back h2{
+    color:#fff;
+    font-family: "Segoe UI", "Noto Sans", sans-serif;
+    font-size: x-large;
+    position:relative;
+    top:0%;
+    bottom:50%;
+
+  }
+
+  .card-content{
+    padding: 0px 16px;
+    max-height: 0px;
+  }
+
+  .backcolour{
+    background: black;
+    padding-bottom: 2px;
+  }
+
+  .backcolour h2 {
+    color: #70ADC6;
+    font-family: Calibri;
+    font-size: large;
+  }
+
+  .ftsize{
+    font-size: 30px;
+  }
 }

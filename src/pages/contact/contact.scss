@@ -1,0 +1,62 @@
+page-contact {
+
+  .label-color{
+    font-style: italic;
+    color: #181A1E;
+    font-family: "Times New Roman";
+    font-size: 16px;
+  }
+
+  .input-background{
+    background: #EEEFF0;
+    font-style: italic;
+    font-size: 18px;
+    color: #181A1E;
+    font-family: "Times New Roman";
+    padding-top:10px;
+    margin-top:20px;
+    border-radius:10px;
+  }
+
+  .item-background{
+    padding-top:10px;
+    //background: #000;
+    background: #EEEFF0;
+    border-radius:10px;
+  }
+
+  .item-background p{
+    color:#000;
+    font-family: "Comic Sans MS";
+  }
+
+  .item-background h2{
+    font-family: "Comic Sans MS";
+    color:#1681A3;
+
+  }
+
+  .btn-send{
+    text-align:right;
+    padding:25px 35px;
+    margin-top:0px;
+    background: #000;
+    color: #fff;
+
+  }
+
+  .btn-send:hover{
+    color:#fff;
+
+  }
+
+  .icon-size{
+    font-size:30px;
+  }
+
+  .icon-call{
+    font-size:30px;
+    color: #1681A3;
+    font-weight: 800;
+  }
+}

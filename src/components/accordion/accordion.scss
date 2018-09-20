@@ -1,0 +1,41 @@
+accordion {
+  .card-header {
+    height: 100%;
+    width: 100%;
+
+  }
+
+  .card-header h2 {
+    position: relative;
+    bottom: 0%;
+    left: 5%;
+    color: #fff;
+    font-family: "Comic Sans MS";
+    font-size: 23px;
+
+    padding: 5px;
+  }
+
+  .card-header img{
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .ftsize{
+    font-size: 30px;
+  }
+
+  .heading-back{
+    background: #000;
+    width: 100%;
+  }
+
+  #club-heading{
+    color: #1681A3;
+    font-family: "Comic Sans MS";
+    font-size: 18px;
+
+
+  }
+}

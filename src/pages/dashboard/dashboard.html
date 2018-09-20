@@ -1,0 +1,67 @@
+
+<ion-header>
+  <ion-navbar color="nav-color">
+    <ion-title>
+      <img src="../../assets/imgs/lifelogo.png" style="width:50px; height:50px;">
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content style="background: #fff ;">
+  <ion-grid>
+    <ion-row class="center">
+      <ion-col col-12 no-padding>
+        <!-- <ion-slides pager="true" effect="flip" loop="true" autoplay="1000" zoom="true">
+
+          <ion-slide *ngFor = "let img of news" (click)="onLoadNews()">
+            <img [src] = "img.news_image_url" />
+
+          </ion-slide>
+
+        </ion-slides> -->
+        <ion-slides *ngIf="news && news.length" autoplay="5000" effect="flip" pager="true" loop="true" speed="300">
+          <ion-slide   *ngFor="let slide of news" (click)="onLoadNews()">
+            <img src="{{slide.news_image_url}}" />
+          </ion-slide>
+        </ion-slides>
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="padding-top: 5px;">
+
+      <ion-col col-4 style="background:#33A117;" class="btn-dashboard" (click)="onLoadPlanning()">
+        <ion-icon ios="ios-bulb" md="md-bulb" class="dash-icon"></ion-icon>
+        <p>Planning</p>
+      </ion-col>
+
+      <ion-col col-4 style="background:#1681A3;"   class="btn-dashboard" (click)="onLoadBooking()">
+        <ion-icon ios="ios-create" md="md-create" class="dash-icon"></ion-icon>
+        <p>Booking</p>
+      </ion-col>
+
+      <ion-col col-4 style="background:#AB36C0;"  class="btn-dashboard" (click)="onLoadContact()">
+        <ion-icon ios="ios-call" md="md-call" class="dash-icon"></ion-icon>
+        <p>Contact</p>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+
+      <ion-col col-6 style="background:#B3AE24;"  class="btn-invite" (click)="onLoadInvite()">
+        <ion-icon ios="ios-add-circle" md="md-add-circle" class="invite-icon"></ion-icon>
+        <p>&nbsp;&nbsp;Invite <br>A  Friend</p>
+      </ion-col>
+
+
+      <ion-col col-6 style="background:#E7254B;" class="btn-more" (click)="onLoadMore()">
+        <ion-icon ios="ios-apps" md="md-apps" class="more-icon"></ion-icon>
+        <p>MORE</p>
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content>

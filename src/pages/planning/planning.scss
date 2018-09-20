@@ -1,0 +1,35 @@
+page-planning {
+  .card-header{
+    background: url("../../assets/imgs/Capture5.PNG") no-repeat center;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+    padding:0px;
+    margin:0px;
+  }
+  .backcolour{
+    background:#000;
+  }
+
+  .plan_content h2{
+    color: #fff;
+    font-family: "Comic Sans MS";
+
+  }
+  .plan_content{
+    margin-top:2px;
+  }
+
+  #image-size{
+    height:100%;
+    width: 100%;
+  }
+  .ftsize{
+    font-size: 30px;
+  }
+
+  .news_img{
+    border: 1px solid #D5DBDB;
+    border-style:inset;
+  }
+}

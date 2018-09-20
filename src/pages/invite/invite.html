@@ -1,0 +1,38 @@
+
+<ion-header>
+  <ion-navbar color="nav-color">
+    <ion-title>
+      <img src="../../assets/imgs/lifelogo.png" style="width:50px; height:50px;">
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="background: #fff ;">
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 class="center">
+        <form #f = "ngForm" (ngSubmit) = "onInvite(f)">
+          <ion-list>
+
+            <ion-icon ios="ios-person-add" md="md-person-add" class="icon-style"></ion-icon>
+
+
+            <ion-item class="input-background">
+              <ion-label floating>Name of Friend</ion-label>
+              <ion-input type="text" name="name_of_friend" ngModel required></ion-input>
+            </ion-item>
+
+            <ion-item class="input-background">
+              <ion-label floating>Contact Number</ion-label>
+              <ion-input type="text" name="invite_contact_no" ngModel required></ion-input>
+            </ion-item>
+
+            <button class="btn-try" ion-button type="submit">Send a Free Try</button>
+
+          </ion-list>
+
+        </form>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

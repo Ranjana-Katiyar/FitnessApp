@@ -1,0 +1,96 @@
+page-dashboard {
+  .btn-more{
+    padding: 10px 40px;
+    background: #000;
+    color: #fff;
+    font-family: "Comic Sans MS";
+    font-size: 16px;
+    text-transform: none;
+    border: 5px solid #f4f4f4;
+    border-style: inset;
+    text-align:center;
+  }
+  .btn-more .more-icon{
+    //position:absolute;
+    //left: 40%;
+    //top: 30%;
+    font-size: 50px;
+    padding-top:30px;
+  }
+  .btn-more p{
+    //position:absolute;
+    //left: 35%;
+    //bottom: 0px;
+    font-size:17px;
+
+  }
+
+  .btn-invite{
+    padding: 10px 40px;
+    background: #000;
+    color: #fff;
+    font-family: "Comic Sans MS";
+    border: 5px solid #f4f4f4;
+    border-style: inset;
+    text-align:center;
+  }
+
+  .btn-invite .invite-icon{
+    //position:absolute;
+    //left: 35%;
+    //top: 20%;
+    font-size: 50px;
+    padding-top:30px;
+  }
+  .btn-invite p{
+    //position:absolute;
+    //left: 30%;
+    //bottom: 0px;
+    //top:50%;
+    font-size:17px;
+  }
+
+
+  .center{
+    text-align:center;
+  }
+
+  .btn-dashboard{
+    color: #fff;
+
+    font-family: "Comic Sans MS";
+    border: 3px solid #f4f4f4;
+    border-style: inset;
+    text-align: center;
+  }
+
+  .btn-dashboard .dash-icon{
+    //position:absolute;
+    //left: 30%;
+    //top: 20%;
+    font-size: 50px;
+    padding-top:30px;
+  }
+
+  .btn-dashboard p{
+    //position:absolute;
+    //left: 20%;
+    //bottom: 0px;
+    font-size:18px;
+  }
+
+  .overlay-text{
+    position: absolute;
+    bottom: 2px;
+    left:0px;
+
+    //background: rgba(0,255,255,0.4);
+    padding: 10px;
+  }
+
+  ion-slide p{
+    font-size: 12px;
+    color:#fff;
+  }
+
+}

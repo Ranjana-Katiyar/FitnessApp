@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-navbar color="nav-color">
+    <ion-title>
+      <img src="../../assets/imgs/lifelogo.png" style="width:50px; height:50px;">
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content style="background: #fff ;">
+  <ion-grid>
+    <ion-row>
+
+      <ion-col col-12>
+        <ion-list>
+
+
+
+          <ion-item (click) = "onLoadAbout()">
+            <ion-icon ios="ios-information-circle" md="md-information-circle" item-start id="about_color"></ion-icon>
+            About Us
+
+          </ion-item>
+
+          <ion-item (click) = "onLoadSettings()">
+            <ion-icon ios="ios-settings" md="md-settings" item-start id="settings_color"></ion-icon>
+            Settings
+
+          </ion-item>
+
+          <ion-item (click) = "onLoadPolicy()">
+            <ion-icon ios="ios-lock" md="md-lock" item-start id="policy_color"></ion-icon>
+            Privacy Policy
+
+          </ion-item>
+
+          <!-- <ion-item>
+              <ion-icon ios="ios-chatboxes" md="md-chatboxes" item-start id="feedback_color"></ion-icon>
+              Feedback
+
+          </ion-item> -->
+
+          <ion-item (click) = "onLogOut()">
+            <ion-icon ios="ios-exit" md="md-exit" item-start id="logout_color"></ion-icon>
+            Log Out
+
+          </ion-item>
+
+
+
+
+        </ion-list>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,41 @@
+
+<ion-header>
+  <ion-navbar color="nav-color">
+    <ion-title>
+      <img src="../../assets/imgs/lifelogo.png" style="width:50px; height:50px;">
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="back-color-grey">
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 class="center">
+        <ion-list>
+
+          <ion-item class="back-color-grey">
+            <ion-label><h2 class="label-color-bold">ARE YOU A MEMBER ?</h2></ion-label>
+            <ion-toggle [(ngModel)]="pepperoni" (ionChange)="change()"></ion-toggle>
+          </ion-item>
+
+          <button class="btn-g" ion-button *ngIf="hide" (click)="onLoadRegister()" >Guest</button>
+
+          <ion-list *ngIf="pepperoni">
+
+            <ion-item inset class="back-color-grey">
+              <ion-label floating><h3 class="label-color">Enter Your Card Number</h3></ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+
+
+            <button class="btn-m" ion-button (click)="onLoadDashboard()" >Member</button>
+
+
+          </ion-list>
+
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
